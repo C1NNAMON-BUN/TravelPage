@@ -42,9 +42,16 @@
         font-weight: normal;
         color: #102746;
     }
+
     .wrapper{
         max-width: 1060px;
         margin: 0 auto;
+    }
+    
+
+    img{
+        max-width: 100%;
+        height: auto;
     }
 
     /*Header styles start*/
@@ -54,7 +61,7 @@
         left:0;
         width: 100%;
     }
-    .hederWrapper{
+    .headerWrapper{
         display: flex;
         flex-wrap: wrap;
         align-items: flex-end;
@@ -88,7 +95,10 @@
             background: url(../img/intro-bg.jpg)no-repeat center;
             background-size: cover;
             padding-top: 263px;
+            padding-bottom: 223px;
+
         }
+
         .introTitle{
             font-weight: 500;
             font-size: 50px;
@@ -98,18 +108,19 @@
             color: white;
         }
 
-        .subTutle{
-            font-weight: 400;
+        .introSubTutle{
             font-size: 16px;
             line-height: 24px;
             max-width: 546px;
             margin-bottom: 59px;
             color: white;
         }
+
         .searchFormInfo{
             display: flex;
             flex-wrap: wrap;
         }
+
         .searchFormField{
             width: 297px; /*or flex-basis */
             background: transparent url(../img/svg/circle-icon.svg) no-repeat left 6px;
@@ -121,13 +132,12 @@
             padding-bottom: 22px;
             font-weight: 500;
             font-size: 18px;
-            line-height: 24px;
             color: white;
+            
         }
         .searchFormField::placeholder{
             font-weight: 500;
             font-size: 18px;
-            line-height: 24px;
             color: white;
         }
 
@@ -137,7 +147,6 @@
             text-transform: uppercase;
             font-weight: 500;
             font-size: 18px;
-            line-height: 24px;
             background: #1B7DFF;
             color: #FFFFFF;
         }
@@ -145,6 +154,94 @@
             background: #2668be;
 
         }
+        .searchFormWrap{
+           с: 150px;
+        }
+
         /*Intro styles end*/
+
+        /*Benefits styles start*/
+        .benefits{
+            margin-bottom: 131px;
+        }
+
+        .benefitsWrap{
+            max-width: 1262px;
+            background-color: #fff;
+            margin: 0 auto;
+            box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+            position: relative;
+        }
+        
+        .benefitsTitle{
+            width: 100%;
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 42px;
+            padding: 93px 100px 88px 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateY(-100%);
+            background-color: #fff;
+        }
+
+        .benefitsCards{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 55px;
+            padding: 0 100px;
+        }
+
+        .benefitsCard{
+            grid-column: span 1;
+            margin-bottom: 112px;
+        }
+        
+        .benefitsCardPic{
+            margin-bottom: 37px;
+            max-width: 56px;
+
+        }
+
+        .benefitsCardtThumb{
+            display: block;
+        }
+        
+        .benefitsCardTitle{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 26px;
+        }
+
+        .benefitsCardDesc{
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 39px;
+        }
+
+        .benefitsCardMore{
+            display: inline-block;
+            padding-right: 59px;
+            font-size: 16px;
+            line-height: 24px;
+            color: #006DFE;
+            text-decoration: none;
+            background: url(../img/svg/arrow-right-icon.svg) no-repeat 95% center;
+            transition: .2s alls;
+        }
+
+        .benefitsCardMore:hover, .benefitsCardMore:focus{
+            background: url(../img/svg/arrow-right-icon.svg) no-repeat right center;
+
+        }
+    
+ 
+        
+  
+        /*Benefits styles end*/
+
+
 
 
